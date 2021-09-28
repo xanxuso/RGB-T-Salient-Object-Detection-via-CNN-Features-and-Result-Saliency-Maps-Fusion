@@ -29,7 +29,7 @@ if __name__ == '__main__':
     torch.cuda.manual_seed_all(118)
     
     # dataset
-    img_root = '../../dataset6000'
+    img_root = 'path to train data'
     save_path = 'model'
     if not os.path.exists(save_path): os.mkdir(save_path)
     lr = 0.001 #2
