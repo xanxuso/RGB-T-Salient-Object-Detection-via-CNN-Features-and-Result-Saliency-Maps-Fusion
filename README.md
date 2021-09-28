@@ -11,6 +11,10 @@ download pretrained vgg model from [link](https://pan.baidu.com/s/1DDHhmjau01Oo7
 change path in `train.py` to train data .
 
 use `python train.py` to start training.
+### For the testing of the proposed network:
+change path in `test.py` to test data and trained checkpoint.
+
+use `python test.py` to start testing.
 ### For Result Fusion:
 change paths in `resultFusion.py`.
 
