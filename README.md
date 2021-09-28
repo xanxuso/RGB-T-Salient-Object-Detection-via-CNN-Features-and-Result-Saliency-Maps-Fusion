@@ -12,7 +12,7 @@ change path in `train.py` to train data .
 
 use `python train.py` to start training.
 ### For the testing of the proposed network:
-change path in `test.py` to test data and trained checkpoint.
+change paths in `test.py` to test data and trained checkpoint.
 
 use `python test.py` to start testing.
 ### For Result Fusion:
