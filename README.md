@@ -12,7 +12,7 @@ change path in `train.py` to train data .
 
 use `python train.py` to begin training.
 ### For Result Fusion:
-change the path in `resultFusion.py`.
+change paths in `resultFusion.py`.
 
 use `python resultFusion.py` to fuse saliency maps from RGB and T modalities, there are some examples in `asserts` for testing.
 
