@@ -10,7 +10,7 @@ download pretrained vgg model from [link](https://pan.baidu.com/s/1DDHhmjau01Oo7
 
 change path in `train.py` to train data .
 
-use `python train.py` to begin training.
+use `python train.py` to start training.
 ### For Result Fusion:
 change paths in `resultFusion.py`.
 
