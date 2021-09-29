@@ -43,6 +43,4 @@ if __name__ == '__main__':
             pred3 = np.squeeze(torch.sigmoid(result_g).cpu().data.numpy())
             pred3 = 255 * pred3
             cv2.imwrite(os.path.join(out_path, name[0][:-4] + '_g.png'), pred3)            
-    time_e = time.time()
-    print('speed: %f FPS' % (img_num / (time_e - time_s)))
 
