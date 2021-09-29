@@ -24,3 +24,5 @@ use `python resultFusion.py` to fuse saliency maps from RGB and T modalities, th
 Result of VT5000 dataset: [link](https://pan.baidu.com/s/1jn6Y9vi7qhnTIpHiW8anWA),&emsp;code：1234.
 
 Result of VT1000 dataset: [link](https://pan.baidu.com/s/1jex2q55VZeSalOYWCtC4BQ),&emsp;code：4321.
+
+The evaluation toolbox is provided by [https://github.com/ArcherFMY/sal_eval_toolbox](https://github.com/ArcherFMY/sal_eval_toolbox)
