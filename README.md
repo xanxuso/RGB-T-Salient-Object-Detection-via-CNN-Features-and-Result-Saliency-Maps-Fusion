@@ -8,7 +8,7 @@ This project provides the codes and results for 'RGB-T-Salient-Object-Detection-
 ### For the training of the proposed network:
 download pretrained vgg model from [link](https://pan.baidu.com/s/1DDHhmjau01Oo775mi1wdgw),code：0000; put it in `model` directory.
 
-change path in `train.py` to train data .
+change `img_root` in `train.py` to load train data .
 
 use `python train.py` to start training.
 ### For the testing of the proposed network:
