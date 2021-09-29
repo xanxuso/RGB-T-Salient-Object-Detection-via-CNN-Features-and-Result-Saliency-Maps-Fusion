@@ -12,7 +12,9 @@ change `img_root` in `train.py` to load train data .
 
 use `python train.py` to start training.
 ### For the testing of the proposed network:
-change paths in `test.py` to test data and trained checkpoint.
+change `model_path` and 'root' in `test.py` to load trained checkpoint and test data.
+
+change `out_path` in `test.py` to save test results.
 
 use `python test.py` to start testing.
 ### For Result Fusion:
