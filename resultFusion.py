@@ -61,8 +61,8 @@ def QuadReconstructRefined(S, img, minDim):
                 reBlkSeq[:,:,ii] = reblkVal
             tempReconstImg = qtsetblk(tempReconstImg,newS,dim,reBlkSeq)
         dim = int((dim - 1) / 2 + 1)
-    bgImg = tempReconstImg[1:-1, 1:-1]
-    return bgImg
+    ReImg = tempReconstImg[1:-1, 1:-1]
+    return ReImg
 
 def sub2ind(array_shape, rows, cols):
     ind = rows + cols*array_shape[0]
@@ -158,14 +158,14 @@ def main():
         minImg = cv2.erode(img, kernel)
 
         # Bezier Reconstruction
-        bgImg = QuadReconstructRefined(S, minImg, minSz)
-        bgImg = np.array(bgImg,dtype='uint8')
-        bgImg = cv2.resize(bgImg, (w,h))
+        ReImg = QuadReconstructRefined(S, minImg, minSz)
+        ReImg = np.array(ReImg,dtype='uint8')
+        ReImg = cv2.resize(ReImg, (w,h))
 
-        bgImg = cv2.GaussianBlur(bgImg,(3,3),3/2)
+        ReImg = cv2.GaussianBlur(ReImg,(3,3),3/2)
         # Adaptive fusion
         salVis = cv2.cvtColor(salVis, cv2.COLOR_BGR2GRAY)
-        addFeature = np.double(bgImg) * (entropy(OriIR) / entropy(OriVis))
+        addFeature = np.double(ReImg) * (entropy(OriIR) / entropy(OriVis))
         addFeaturelogical = addFeature > 0
         addedVals = np.double(addFeature) * addFeaturelogical + np.double(salVis)
         maxVals = np.sort(addedVals.flatten())[::-1]
